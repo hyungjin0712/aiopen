@@ -1,1 +1,21 @@
-<p>moderations works!</p>
+<div>
+    <Head>
+      <title>OpenAI Quickstart</title>
+      <link rel="icon" href="/verify.png" />
+    </Head>
+
+    <main className=main>
+    <img src="/assets/verify.png" className=icon />
+      <h3>Moderation of a sentence</h3>
+      <form>
+        <input
+          type="text"
+          name="sentence"
+          placeholder="Enter a sentence"
+          [(ngModel)]= "sentence"
+        />
+        <input type="button" value="Moderation" (click)="postCompletition()" />
+              </form>
+              <div className=result> {{result}} </div>
+    </main>
+</div>
