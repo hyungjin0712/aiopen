@@ -16,7 +16,7 @@ export class ImagesgenerationService {
   httpOptions = {
     headers : new HttpHeaders({
       'Content-Type' : 'application/json', 
-          'Authorization' : 'Bearer <your-key>',
+          'Authorization' : 'Bearer <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>',
     })
   }
   postCompletition(payload : any): Observable<any> {
